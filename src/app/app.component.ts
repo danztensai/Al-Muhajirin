@@ -4,6 +4,13 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
+import { InfaqPage } from '../pages/infaq/infaq';
+import { PhotoPage } from '../pages/photo/photo';
+import { DetailArtikelPage } from '../pages/detail-artikel/detail-artikel';
+import { LoginPage } from '../pages/login/login';
+import { VideoListPage } from '../pages/video-list/video-list';
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,8 +36,11 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Home', component: HelloIonicPage },
+      { title: 'Scan Jimpitan', component: InfaqPage },
+	  { title: 'Video', component : VideoListPage},
+	  { title: 'Photo', component: PhotoPage },
+	  { title: 'Login', component: LoginPage }
     ];
   }
 
